@@ -2,8 +2,9 @@
 #include <time.h>
 #include<stdio.h>
 /**
- * main is the entry  point of the program
- * Return (0)indicates (Success)
+ * main - Entry point of the program.
+ * Description: This takes command line arguments and an exit status.
+ * Return: 0 on successful, non-zero on error.
 */
 int main(void)
 {
