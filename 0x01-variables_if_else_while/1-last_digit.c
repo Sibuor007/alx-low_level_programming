@@ -2,9 +2,9 @@
 #include <time.h>
 #include<stdio.h>
 /**
- * main - entry point
- * Return (0) - (Sucess)
- */
+ * main is the entry point of the program
+ * Return (0) indicates (Sucess)
+*/
 int main(void)
 {
 	int n;
