@@ -8,14 +8,17 @@ int main(void)
 {
 	char h;
 
-	h = '0';
+	int j;
+
+	h = 'a';
+
+	j = 0;
 
 	while
-		(h <= 9) {
-			putchar(h);
-			h++;
+		(j < 10) {
+			putchar(j + '0');
+			j++;
 		}
-	h = 'a';
 
 	while
 		(h <= 'f') {
