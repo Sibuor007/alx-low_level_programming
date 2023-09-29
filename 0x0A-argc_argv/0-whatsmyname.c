@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - highlights the name of the program
  * @argc: number of arguments
@@ -7,6 +8,9 @@
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("The program name is %s\n", *argv);
+	if (argc > 0)
+	{
+		printf("The program name is %s\n", argv[0]);
+	}
 	return (0);
 }
