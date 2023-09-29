@@ -1,25 +1,27 @@
-#include "main.h" 
-/** 
-* _strcat - function that combines two strings 
+#include "main.h"
+/**
+* _strcat - function that combines two strings
 * @dest: destination file
 * @src: source file
-* Return: void 
-*/ 
-char *_strcat(char *dest, char *src) 
-{ 
-	int a; int b;
+* Return: void
+*/
+char *_strcat(char *dest, char *src)
+{
+	int a;
+	int b;
 
-	a = 0; 
-	while (dest[a] != '\0') 
-	{ 
-		a++; 
-	} 
-	b = 0; 
-	while (src[b] != '\0') 
-	{ 
-		dest[a] = src[b]; 
-		a++; b++; 
+	a = 0;
+	while (dest[a] != '\0')
+	{
+		a++;
 	}
- 	dest[a] = '\0'; 
-	return (dest); 
+	b = 0;
+	while (src[b] != '\0')
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
+	}
+	dest[a] = '\0';
+	return (dest);
 }
