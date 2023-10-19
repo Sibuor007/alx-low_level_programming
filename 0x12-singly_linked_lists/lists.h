@@ -5,11 +5,11 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-typedef struct lists_1
+typedef struct lists_z
 {
 	char *str;
 	unsigned int length;
-	struct lists_1 *next;
+	struct lists_z *next;
 }lists_t;
 
 int _putchar(char c);
