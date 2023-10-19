@@ -10,7 +10,7 @@ typedef struct lists_1
 	char *str;
 	unsigned int length;
 	struct lists_1 *next;
-}lists_1;
+}lists_t;
 
 int _putchar(char c);
 size_t print_list(const list_t *h);
