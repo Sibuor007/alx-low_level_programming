@@ -39,14 +39,14 @@ size_t looped_listint_len(const listint_t *head)
 				count++;
 				snail_slow = snail_slow->next;
 			}
-			break;
+			return (count);
 		}
 
 		snail_slow = snail_slow->next;
 		cheetah_fast = (cheetah_fast->next)->next;
 	}
 
-	return (count);
+	return (0);
 }
 
 /**
@@ -64,7 +64,7 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		for (; head != NULL; count++)
 		{
-			printf("%d\n", head->n);
+			printf("[%p] %d\n", (void *)head, head->n);
 			head = head->next;
 		}
 	}
@@ -73,7 +73,7 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		for (i = 0; i < count; i++)
 		{
-			printf("%d\n", head->n);
+			printf("[%p] %d\n",(void *)head, head->n);
 			head = head->next;
 		}
 	}
