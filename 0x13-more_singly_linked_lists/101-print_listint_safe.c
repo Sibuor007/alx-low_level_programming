@@ -59,7 +59,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t count, i = 0;
 	count = looped_listint_len(head);
-	
+		
 	if (count == 0)
 	{
 		for (; head != NULL; count++)
@@ -76,6 +76,7 @@ size_t print_listint_safe(const listint_t *head)
 			printf("[%p] %d\n",(void *)head, head->n);
 			head = head->next;
 		}
+	printf("-> [%p] %d\n", (void *)head, head->n);
 	}
 
 	return (count);
